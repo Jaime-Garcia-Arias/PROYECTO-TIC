@@ -39,27 +39,50 @@ nav a{
     
 }
 /* Seccion tarjetas */
-.contenedores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top:20px;
-  }
+.tarjetas {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
-  .tarjeta {
-    width: 100px;
-    height: 70px;
-    background-color: #c4c4c4;
-    border-radius: 5px;
-  }
+.tarjetas a {
+  width: calc((100% / 5) - 48px);
+}
+
+.tarjetas li {
+width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+  
+}
+
+.tarjetas .wrapper {
+  padding: 4px 16px;
+}
+a{
+  text-decoration: none;
+}
+li img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #223344;
+}
+
+
 /* Footer  */
 footer {
     margin-top: 20px;
     text-align: right;
     background-color: #3c3c3c;
     color: white;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 
   footer a {
@@ -67,4 +90,8 @@ footer {
     color: white;
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* identificadores */
+  #septiembre{
+    background: linear-gradient();
   }
