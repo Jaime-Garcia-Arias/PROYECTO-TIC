@@ -14,14 +14,21 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     padding: 10px 0px; 
+    border-bottom: 4px solid green;
 }
 nav a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
+    
 }
+nav a:hover{
+  text-decoration-line: overline underline;
+  text-decoration-style: wavy;
+}
+
 /* Primera seccion */
 .seccion_informacion{
     display: flex;
@@ -32,7 +39,7 @@ nav a{
 }
 .seccion_informacion h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+    font-size: 32px;
 }
 .seccion_informacion p{
     font-size: 18px;
@@ -60,6 +67,10 @@ width: 100%;
 
 .tarjetas .wrapper {
   padding: 4px 16px;
+  border-radius: 0 0 16px 16px;
+}
+.tarjetas .wrapper:hover{
+  background-color: lightyellow;
 }
 a{
   text-decoration: none;
@@ -78,6 +89,8 @@ h3{
 
 /* Footer  */
 footer {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     text-align: right;
     background-color: #3c3c3c;
@@ -87,11 +100,46 @@ footer {
 
   footer a {
     text-decoration: none;
+    text-align: right;
     color: white;
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .páginapersonal{
+    text-align: left;
+  }
+  footer a:hover{
+    color: yellow;
+    text-decoration: underline;
   }
   /* identificadores */
   #septiembre{
     background: linear-gradient();
   }
+ /*ajuste de pantalla*/
+ @media (max-width: 768px) {
+  .tarjetas a {
+      flex: 1 1 calc(50% - 16px); /* 2 tarjetas por fila */
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjetas a {
+      flex: 1 1 calc(100% - 16px); /* 1 tarjeta por fila */
+  }
+
+  footer {
+      flex-direction: column;
+      text-align: center;
+  }
+}
