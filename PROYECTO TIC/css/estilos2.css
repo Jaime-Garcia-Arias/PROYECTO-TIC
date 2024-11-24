@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f7e8;
+  }
+
+  /* Encabezado */
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 10px 0;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Sección principal */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-container h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .main-container p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Contenedor de tarjetas */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 100px;
+    height: 70px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+  }
+
+  /* Cuadro grande */
+  .large-box {
+    width: 150px;
+    height: 150px;
+    background-color: #c4c4c4;
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 10px 0;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
